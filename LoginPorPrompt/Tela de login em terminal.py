@@ -6,8 +6,13 @@ while True:
 
     break
 """
-n = True
-while n:
+
+userchoice = True
+
+input(str("Escolha umna opção: \n1 - Logar-se\n2 - Cadastrar-se"))
+while userchoice:
     des = input('escolha uma opção')
-    if des == 0:
+    tipo = type(des)
+    if des == '0':
         n = False
+    print (tipo)
