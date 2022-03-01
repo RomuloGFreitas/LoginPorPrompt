@@ -1,4 +1,5 @@
 print("Bem-Vindo")
+allusers = {}
 def initialchoice():
     userchoice = True
     decision = '0'
@@ -15,14 +16,17 @@ def initialchoice():
         else:
             print('Insira uma opção valida!!\n')
 
-
-    
     return
 
-#def
+#def login
 
 def register():
-
+    usr = input("Insira um novo usuario:\n")
+    pswrd = input("Insira uma nova senha:\n")
+    allusers = {usr : pswrd}
+    
+    print("Registrado com sucesso!")
+    return login()
 
 initialchoice()
 
